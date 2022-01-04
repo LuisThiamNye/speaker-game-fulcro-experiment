@@ -1,0 +1,25 @@
+.cpcache
+.clj-kondo/*
+!.clj-kondo/config.edn
+.lsp/
+.shadow-cljs/
+resources/public
+node_modules/
+
+
+**/.expo
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+
+/app
+.log
+yarn-error.log
+
+# macOS
+.DS_Store

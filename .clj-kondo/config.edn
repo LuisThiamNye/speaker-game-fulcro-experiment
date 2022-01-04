@@ -1,0 +1,4 @@
+{:lint-as {devcards.core/deftest                   clj-kondo.lint-as/def-catch-all
+           devcards.core/defcard                   clojure.core/def
+           com.fulcrologic.fulcro.components/defsc clojure.core/defn
+           com.fulcrologic.fulcro.routing.dynamic-routing clojure.core/defn}}

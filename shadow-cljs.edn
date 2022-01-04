@@ -1,0 +1,12 @@
+{:deps     {:aliases [:dev]}
+ :dev-http {8000 "classpath:public"}
+ :nrepl    {:port       9888
+            :middleware [refactor-nrepl.middleware/wrap-refactor]}
+
+ :builds {:main {:target     :react-native
+                 :output-dir "app"
+                 :init-fn    speaker.client/init
+                 :devtools   {:autoload true
+                              :after-load speaker.client/start
+                              :preloads   [dev.inspect-native-preload
+                                           shadow.expo.keep-awake]}}}}
